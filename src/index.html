@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Helpdesk</title>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='header'>
+            <div class='header-button'>Добавить тикет</div>
+        </div>
+        <div class='tickets'>
+            <div id='tickets_list' class='tickets-list'></div>
+        </div>
+        </table>
+        <form name='edit' class='edit' novalidate>
+            <div class='form-header'>Добавить тикет</div>
+            <div class='ticket-name-form'>
+                <p>Краткое описание</p>
+                <input type='text' id='input_name' class='edit-input' required>
+            </div>
+            <div class='ticket-description-form'>
+                <p>Подробное описание</p>
+                <textarea id='input_description' class='edit-input' required></textarea>
+            </div>
+            <div class='buttons-box'>
+                <button type='button' id='cancel_button' class='button cancel-button'>Отмена</button>
+                <button type='button' id='save_button' class='button submit-button'> Ok</button>
+            </div>
+        </form>
+        <form name='modal' class='modal' novalidate>
+            <div class='modal-header'>Удалить тикет</div>
+            <span class='modal-content'>Вы уверены, что нужно удалить тикет? Это действие необратимо.</span>
+            <div class='buttons-box'>
+                <button type='button' id='cancel_modal_button' class='button cancel-button'>Отмена</button>
+                <button type='button' id='save_modal_button' class='button submit-button'> Ok</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
