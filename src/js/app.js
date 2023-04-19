@@ -141,7 +141,9 @@ function editFormFunc() {
 
     const form = new FormData();
 
-    submitBtn.addEventListener("click", () => {
+    submitBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+
       form.append("name", nameInpt.value);
       form.append("description", descInpt.value);
 
